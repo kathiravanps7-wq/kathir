@@ -118,6 +118,86 @@ s0.parentNode.insertBefore(s1,s0);
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "txrywrmne8");
+		<!DOCTYPE html>
+<html>
+<head>
+<title>Solar Savings Calculator</title>
+<style>
+body{
+font-family: Arial;
+text-align:center;
+margin-top:100px;
+background:#f5f5f5;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+width:350px;
+margin:auto;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+padding:10px;
+width:80%;
+font-size:16px;
+margin-top:10px;
+}
+
+button{
+margin-top:15px;
+padding:10px 20px;
+font-size:16px;
+background:#25D366;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Solar Investment Calculator</h2>
+
+<p>Enter Your EB Bill</p>
+
+<input type="number" id="bill" placeholder="Example: 3000">
+
+<br>
+
+<button onclick="sendToWhatsapp()">Calculate & Send</button>
+
+</div>
+
+<script>
+
+function sendToWhatsapp(){
+
+var bill = document.getElementById("bill").value;
+
+var total = bill * 30;
+
+var message = "Hello, my EB bill is ₹" + bill + 
+". Estimated solar investment is ₹" + total;
+
+var phone = "918695754162";
+
+var url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+window.open(url, "_blank");
+
+}
+
+</script>
+
+</body>
+</html>
 </script>
 </head>
 
@@ -703,6 +783,7 @@ Its main goal is to get more customers and sales.
 
 
 </html>
+
 
 
 
